@@ -12,7 +12,7 @@
   </div>
 @endif
 
-<form action="{{ url('/estudiantes/'.$estudiante->id)}}" method="post" class="max-w-md mx-auto bg-white p-6 rounded shadow-md space-y-4 my-20">
+<form action="{{ url('/estudiantes/'.$estudiante->id)}}" method="post" class="max-w-md mx-auto bg-white p-6 rounded shadow-md space-y-4 my-2">
     <h2 class="text-center text-3xl text-sky-500 font-bold mb-10 ">Editar Estudiante</h2>
 @csrf
 {{method_field('PATCH')}} <!--Para modificar el method porque nos obliga laravel que sea PUT O PATCH-->
@@ -20,4 +20,4 @@
 
 </form>
 
-<a class="text-[1.5rem] text-gray-50 text-center rounded-2xl hover:bg-sky-950 bg-sky-800 font-bold p-2 block w-[12rem] mx-auto" href="{{ url('estudiantes/')}}">Regresar</a>
+<a class="text-[1.5rem] text-gray-50 text-center rounded-2xl hover:bg-sky-950 bg-sky-800 font-bold p-2 block w-[12rem] mx-auto my-0" href="{{ url('estudiantes/')}}">Regresar</a>

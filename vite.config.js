@@ -4,10 +4,10 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
      server: {
-        host: 'sistema_crud.local',  // Tu dominio local personalizado
+        host: 'localhost',  // Tu dominio local personalizado
         port: 5173,                   // Puerto por defecto de Vite (NO CAMBIAR A 127)
         hmr: {
-            host: 'sistema_crud.local',  // Debe coincidir con tu dominio
+            host: 'localhost',  // Debe coincidir con tu dominio
         },
     },
     plugins: [
@@ -18,3 +18,4 @@ export default defineConfig({
         tailwindcss(),
     ],
 });
+
